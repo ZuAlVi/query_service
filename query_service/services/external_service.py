@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/external_service', methods=['post'])
 def external_service():
     time.sleep(random.uniform(0, 60))  # Эмуляция задержки
-    response = random.choice([True, False])
+    response = random.choice([True, False]) # Эмуляция ответа
     return jsonify({"response": response})
 
 
