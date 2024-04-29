@@ -79,6 +79,21 @@ http://localhost:8000/swagger/
 http://localhost:8000/redoc/
 ```
 
+## Тесты
+
+Для запуска тестов:
+
+```bash
+python manage.py test
+```
+
+Посмотреть процент покрытия тестами:
+
+```bash
+coverage run --source='.' manage.py test
+
+coverage report
+```
 
 ## Docker
 
