@@ -95,19 +95,12 @@ coverage run --source='.' manage.py test
 coverage report
 ```
 
-## Docker
+## Docker-compose
 
-Для развертывания проекта с помощью Docker, выполните следующие шаги:
-
-1. Соберите образ Docker:
+Для развертывания проекта с помощью Docker-compose, выполните команду:
 
 ```bash
-docker build -t project .
-```
-2. Запустите контейнер:
-
-```bash
-docker run -p 8000:8000 project
+docker-compose up --build
 ```
 
 После этого сервис будет доступен по адресу http://localhost:8000/.
