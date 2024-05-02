@@ -119,7 +119,7 @@ docker build -t app-name .
 - Запускаем:
 
 ```bash
-docker run app-name .
+docker run -p 8000:8000 app-name
  ```
 
 2. Docker Compose:
@@ -127,7 +127,7 @@ docker run app-name .
 - Собираем и запускаем контейнер в фоновом режиме одной командой:
 
 ```bash
-docker-compose up -d --build
+docker-compose up --build
  ```
 
 После этого сервис будет доступен по адресу http://localhost:8000/.
